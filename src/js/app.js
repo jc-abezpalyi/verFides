@@ -4,9 +4,17 @@
 // Feel free with using ES6 here.
 import $ from 'jquery';
 
-import dots from './modules/dots';
-
 // When DOM is ready
 $(() => {
-  dots();
+
+  //
+  // var videoEl = targetYourVideoElementSomehow;
+  //
+  // videoEl.addEventListener("timeupdate", function () {
+  //   console.log('checking time...');
+  //   if (videoEl.currentTime > videoEl.duration - 0.5) {
+  //     // 0.5 is seconds before end.
+  //     videoEl.pause();
+  //   }
+  // });
 });

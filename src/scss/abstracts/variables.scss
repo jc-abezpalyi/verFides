@@ -10,7 +10,7 @@ $breakpoints: (
   'phone': 480px,
   'tablet': 768px,
   'desktop': 980px,
-  'widescreen': 1200px,
+  'widescreen': 1375px,
 );
 
 // Keywords for include media mixin
@@ -53,17 +53,20 @@ $media-expressions: (
   --color-black: #000;
   --color-grey: #999;
   --color-blue: #39f;
+  --color-main-grey: #787878;
+  --color-input-placeholder: rgba(255, 255, 255, 0.5);
 
   // Fonts
+  --font-open-sans: OpenSans, sans-serif;
   --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
 
   // Body base
-  --base-background-color: var(--color-black);
-  --base-font-family: var(--font-sans-serif);
+  --base-background-color: var(--color-white);
+  --base-font-family: var(--font-open-sans);
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
-  --base-text-color: var(--color-black);
+  --base-text-color: var(--color-main-grey);
   --base-min-width: 320px;
 
   // Links base
@@ -88,10 +91,19 @@ $media-expressions: (
   --headings-color: var(--base-text-color);
 
   // Base font styles for headings
-  --headings-sizes-h1: 3rem;
+  --headings-sizes-h1: 36px;
   --headings-sizes-h2: 2.7rem;
   --headings-sizes-h3: 2.4rem;
   --headings-sizes-h4: 2.1rem;
   --headings-sizes-h5: 1.7rem;
   --headings-sizes-h6: 1.5rem;
+  // Base font styles for headings mobile
+  @include media('<tablet'){
+    --headings-sizes-h1: 46px;
+    --headings-sizes-h2: 2.7rem;
+    --headings-sizes-h3: 2.4rem;
+    --headings-sizes-h4: 2.1rem;
+    --headings-sizes-h5: 1.7rem;
+    --headings-sizes-h6: 1.5rem;
+  }
 }
