@@ -2,23 +2,16 @@ import Swiper, { Navigation, Pagination } from 'swiper';
 
 Swiper.use([Navigation, Pagination]);
 
-const swiper = (() => {
-  function init() {
+export default {
+  init() {
     // eslint-disable-next-line no-new
-    new Swiper('.testimonials', {
+    new Swiper('.mySwiper', {
+      slidesPerView: 4,
       spaceBetween: 30,
       navigation: {
-        nextEl: '.testimonials-slider-next',
-        prevEl: '.testimonials-slider-prev',
-      },
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
-  }
-  return {
-    init,
-  };
-})();
-export default swiper;
+  },
+};

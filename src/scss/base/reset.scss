@@ -10,6 +10,7 @@
 
 html {
   font-size: 62.5%;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -18,6 +19,12 @@ body {
   background: var(--color-white);
   font: var(--base-font-size) / var(--base-line-height) var(--base-font-family);
   min-width: var(--base-min-width);
+}
+
+.body__hidden{
+  @media (max-width: 980px) {
+    overflow: hidden;
+  }
 }
 
 // adaptive images

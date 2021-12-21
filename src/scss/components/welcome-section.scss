@@ -1,0 +1,41 @@
+.welcome-section {
+  margin-bottom: 100px;
+  &__title {
+  @extend %title
+  }
+
+  &__post-title {
+    display: block;
+    text-align: center;
+    max-width: 651px;
+    margin: 0 auto 33px;
+
+    & h3 {
+      font-size: 18px;
+      padding: 0 20px;
+    }
+  }
+
+  &__posts {
+    display: flex;
+    justify-content: center;
+    padding: 0 20px;
+   gap: 38px;
+    @include media('<tablet'){
+      display: block;
+    }
+  }
+
+  &__post {
+    max-width: 455px;
+    font-size: 14px;
+    text-align: left;
+    line-height: 1.43;
+    @include media('<tablet'){
+      margin: 0 auto;
+    }
+    & p {
+      padding-bottom: 5px ;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+.management-section{
+  &__wrapper{
+    max-width: 1000px;
+  }
+  &__title {
+    @extend %title
+
+  }
+
+&__person-cards{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 61px;
+  margin-bottom: 10px;
+
+}
+  &__person-card{
+   min-height: 300px;
+    max-width: 225px;
+    padding: 0 20px;
+    align-items: center;
+  }
+  &__person-photo{
+    margin-bottom: 25px;
+    width: 180px;
+    height: 180px;
+  }
+  &__person-info{
+    text-align: center;
+    margin-bottom: 6px;
+    .person__name{
+      font-size: 18px;
+    }
+    .person__position{
+      font-size: 14px;
+    }
+  }
+  &__person-socio{
+    color: #1a3255;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  &__btn-holder{
+    border: 1px solid #1a3255 ;
+    max-width: 170px  ;
+    text-align: center;
+    margin: 0 auto 20px;
+
+    & a {
+      display: inline-block;
+      font-weight: bold;
+      font-size: 14px;
+      padding: 16px;
+      text-decoration: none;
+      color: #1a3255;
+      transition: opacity 0.3s;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+
+}
