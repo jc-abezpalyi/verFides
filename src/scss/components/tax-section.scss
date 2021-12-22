@@ -1,0 +1,47 @@
+.tax{
+  &__wrapper{
+    padding-bottom: 80px;
+    margin-bottom: 73px;
+  }
+  background-image: url('https://via.placeholder.com/1200x300');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 20px;
+  padding-top: 75px;
+  &__title{
+    @extend %title;
+    & h1{
+      color: white;
+    }
+
+  }
+  &__description{
+  color: var(--color-white);
+    display: inline-block;
+    font-size: 18px;
+    margin-bottom: 21px;
+  }
+  &__info-holder{
+    display: block;
+    text-align: center;
+  }
+  &__btn-holder{
+    display: block;
+    border: 1px solid white;
+    max-width: 170px;
+    margin: 0 auto;
+    & a{
+      color: var(--color-white);
+      display: inline-block;
+      text-decoration: none;
+      padding: 15px 14px;
+      font-size: 14px;
+      font-weight: bold;
+      transition: opacity 0.3s;
+      &:hover{
+        opacity: 0.5;
+      }
+    }
+  }
+}

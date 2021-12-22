@@ -1,0 +1,49 @@
+.contact{
+&__sub-title{
+  max-width: 794px;
+  margin: 0 auto 30px;
+
+  h3{
+    font-size: 18px;
+    text-align: center;
+    font-weight: normal;
+  }
+}
+  &__title{
+    @extend %title;
+  }
+  &__cards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  &__card{
+    text-align: center;
+    max-width: 300px;
+  }
+  &__card-title{
+    margin-bottom: 20px;
+  }
+  &__card-image-holder{
+    img{
+      width: 200px;
+    }
+
+    margin-bottom: 10px;
+  }
+  &__card-info{
+    max-width: 246px;
+    margin: 0 auto;
+  }
+  &__card-address{
+    margin: 0 auto 33px;
+
+    span{
+      display: block;
+
+    }
+  }
+  &__card-contacts{
+    text-align: left;
+  }
+}

@@ -3,44 +3,58 @@
 
   &__title {
     @extend %title
+
+  }
+  &__slider{
+    margin-top: 65px;
+    max-width: 832px;
+    margin-bottom: 78px;
   }
 
   &-image {
     background-color: grey;
     width: 100%;
     height: 300px;
+    & img {
+      width: 100%;
+    }
+  }
+  &__slider__slide-img{
+    display: block;
+    position: relative;
+    height: 110px;
+    width: 112px;
+      justify-content: center;
+    background-color:#769eca ;
+    border-radius: 50%;
+    margin-bottom: 14px;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+
+    }
+  }
+  &__slider__slide-title-holder{
+    max-width: 119px;
   }
 }
 
+.swiper-wrapper{
 
-.swiper {
-  width: 100%;
-  height: 600px;
+
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-  background: #fff;
 
   /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
   align-items: center;
 }
 
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
+

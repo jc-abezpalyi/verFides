@@ -1,7 +1,8 @@
 .welcome-section {
   margin-bottom: 100px;
+
   &__title {
-  @extend %title
+    @extend %title
   }
 
   &__post-title {
@@ -20,22 +21,27 @@
     display: flex;
     justify-content: center;
     padding: 0 20px;
-   gap: 38px;
-    @include media('<tablet'){
+    max-width: 1000px;
+    margin: 0 auto;
+    @include media('<tablet') {
       display: block;
     }
   }
-
-  &__post {
-    max-width: 455px;
-    font-size: 14px;
-    text-align: left;
-    line-height: 1.43;
-    @include media('<tablet'){
-      margin: 0 auto;
+  &__content {
+    width: 100%;
+    column-count: 2;
+    column-gap: 25px;
+    margin: 33px 0 0;
+    @include media('<tablet') {
+      column-count: 1;
     }
-    & p {
-      padding-bottom: 5px ;
+    @include media('<tablet') {
+      font-size: 12px;
+      line-height: 1.25;
+      margin: 16px 0 0;
+    }
+    p {
+      margin-bottom: 20px;
     }
   }
 }
