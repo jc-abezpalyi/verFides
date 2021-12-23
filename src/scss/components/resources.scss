@@ -1,5 +1,6 @@
 .resources {
   margin-bottom: 58px;
+
   &__wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -25,12 +26,30 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 36px;
+    @include media('<tablet') {
+      display: block;
+      padding: 20px;
+    }
 
   }
 
   &__post {
+    display: flex;
+    flex-direction: column;
     font-size: 14px;
     max-width: 429px;
+    @include media('<tablet') {
+      margin: 0 auto;
+      &:not(:last-child) {
+        &:after {
+          content: "";
+          width: 100%;
+          margin: 20px 0;
+          border: 1px solid #d7d7d7;
+        }
+      }
+
+    }
 
     strong {
       display: inline-block;
@@ -67,19 +86,27 @@
     }
   }
 
-  &__cards-holder{
+  &__cards-holder {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+
   }
 
-  &__card-title{
+  &__card-res {
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+
+  &__card-title {
     font-size: 18px;
     font-weight: normal;
 
   }
-  &__card-download{
-    a{
+
+  &__card-download {
+    a {
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;

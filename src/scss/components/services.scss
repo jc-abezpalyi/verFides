@@ -2,10 +2,11 @@
   margin-bottom: 100px;
 
   &__title {
-    @extend %title
+    @extend %title;
 
   }
-  &__slider{
+
+  &__slider {
     margin-top: 65px;
     max-width: 832px;
     margin-bottom: 78px;
@@ -15,19 +16,22 @@
     background-color: grey;
     width: 100%;
     height: 300px;
+
     & img {
       width: 100%;
     }
   }
-  &__slider__slide-img{
+
+  &__slider__slide-img {
     display: block;
     position: relative;
     height: 110px;
     width: 112px;
-      justify-content: center;
-    background-color:#769eca ;
+    justify-content: center;
+    background-color: #769eca;
     border-radius: 50%;
     margin-bottom: 14px;
+
     img {
       position: absolute;
       top: 50%;
@@ -37,12 +41,13 @@
 
     }
   }
-  &__slider__slide-title-holder{
+
+  &__slider__slide-title-holder {
     max-width: 119px;
   }
 }
 
-.swiper-wrapper{
+.swiper-wrapper {
 
 
 }
