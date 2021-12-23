@@ -8,17 +8,31 @@
 
   &__title {
     @extend %title;
+    h1{
+      font-weight: 400;
+    }
   }
-
+  &__link{
+    color: black;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    &:after{
+      content: url("../../images/btn_arrow2.png");
+      margin-left: 6px;
+    }
+  }
   &__post-title {
     display: block;
     text-align: center;
     max-width: 786px;
-    margin: 0 auto 53px;
+    margin: 0 auto 45px;
+    padding: 0 20px;
 
     h3 {
       font-size: 18px;
       font-weight: normal;
+
     }
   }
 
@@ -78,6 +92,10 @@
       color: #1a3255;
       text-decoration: none;
       transition: opacity 0.3s;
+      &:after{
+        content: url("../../images/btn_arrow2.png");
+        margin-left: 6px;
+      }
 
       &:hover {
         opacity: 0.5;
@@ -85,12 +103,21 @@
 
     }
   }
-
+&__card{
+  @include media('<tablet'){
+    margin: 0 auto;
+  }
+}
   &__cards-holder {
+    max-width: 591px;
+    margin: 0 auto;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     text-align: center;
 
+  }
+  &__card-image-holder{
+    margin-bottom: 8px;
   }
 
   &__card-res {
@@ -102,6 +129,7 @@
   &__card-title {
     font-size: 18px;
     font-weight: normal;
+    margin-bottom: 5px;
 
   }
 
@@ -111,6 +139,9 @@
       font-size: 14px;
       font-weight: bold;
       color: #1a3255;
+    }
+    &:after{
+      content: url("../../images/arrow_down.png");
     }
   }
 }

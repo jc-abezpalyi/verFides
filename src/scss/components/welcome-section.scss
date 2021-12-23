@@ -2,7 +2,11 @@
   margin-bottom: 100px;
 
   &__title {
-    @extend %title
+    @extend %title;
+    h1{
+    font-weight: 300;
+      font-style: italic;
+  }
   }
 
   &__post-title {
@@ -31,6 +35,7 @@
     width: 100%;
     column-count: 2;
     column-gap: 25px;
+    column-fill: balance;
     margin: 33px 0 0;
     @include media('<tablet') {
       column-count: 1;

@@ -4,6 +4,15 @@
   @include media('<tablet') {
     padding: 35px 0 50px;
   }
+  &__title{
+    @extend %title;
+    margin-bottom: 0;
+    h1{
+      font-weight: 300;
+      font-style: italic;
+      color: var(--color-white)
+    }
+  }
   &__container {
     max-width: 1000px;
     display: flex;
@@ -17,9 +26,9 @@
   }
   &__text {
     font-size: 18px;
-    color: rgba(255, 255, 255, 0.5);
     text-align: center;
-    margin: 35px 0 18px;
+    color: var(--color-white);
+
     @include media('<tablet') {
       font-size: 14px;
       margin: 16px 0 12px;
@@ -36,6 +45,9 @@
     }
     input {
       border:none;
+      width: 353px;
+      height: 50px;
+
     }
   }
   &__column {
@@ -70,6 +82,8 @@
     border: none;
     width: 353px;
     min-height: 150px;
+    font-weight: bold;
+    font-size: 14px;
     @include media('<tablet') {
       width: 100%;
     }

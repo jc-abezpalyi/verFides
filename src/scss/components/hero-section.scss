@@ -63,9 +63,16 @@
   }
   &__pause-btn{
     position: absolute;
+    cursor: pointer;
     right: 30px;
     bottom: 30px;
     padding: 10px;
+    font-size: 18px;
+    color: var(--color-white);
+    svg{
+      font-size: 36px;
+    }
+
     @media (max-width: 980px) {
       display: none;
     }

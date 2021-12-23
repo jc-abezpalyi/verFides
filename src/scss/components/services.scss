@@ -1,5 +1,6 @@
 .services-section {
   margin-bottom: 100px;
+  position: relative;
 
   &__title {
     @extend %title;
@@ -45,6 +46,29 @@
   &__slider__slide-title-holder {
     max-width: 119px;
   }
+  &__btn-prev{
+    &:after{
+      content: url("../../images/slider_arrow_left.png");
+      position: absolute;
+      left: 40px;
+      top: 38px;
+    }
+    @include media ('<desktop') {
+      display: none;
+    }
+  }
+  &__btn-next{
+    &:after{
+      content: url("../../images/slider_arrow_left.png");
+      position: absolute;
+      right: 40px;
+      top: 38px;
+      transform: rotate(180deg);
+    }
+    @include media ('<desktop') {
+      display: none;
+    }
+  }
 }
 
 .swiper-wrapper {
@@ -61,5 +85,4 @@
   justify-content: center;
   align-items: center;
 }
-
 

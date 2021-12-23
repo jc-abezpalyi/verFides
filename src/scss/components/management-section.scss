@@ -41,6 +41,7 @@
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+
   }
   &__btn-holder{
     border: 1px solid #1a3255 ;
@@ -56,10 +57,14 @@
       text-decoration: none;
       color: #1a3255;
       transition: opacity 0.3s;
+      margin-right: 5px;
       &:hover{
         opacity: 0.5;
       }
+      &:after{
+        content: url("../../images/btn_arrow2.png");
+        margin-left: 6px;
+      }
     }
   }
-
 }

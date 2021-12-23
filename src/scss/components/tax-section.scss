@@ -3,7 +3,7 @@
     padding-bottom: 80px;
     margin-bottom: 73px;
   }
-  background-image: url('https://via.placeholder.com/1200x300');
+  background-image: url(../../images/banner2.webp);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -13,6 +13,8 @@
     @extend %title;
     & h1{
       color: white;
+      font-weight: normal;
+
     }
 
   }
@@ -20,28 +22,30 @@
   color: var(--color-white);
     display: inline-block;
     font-size: 18px;
-    margin-bottom: 21px;
   }
   &__info-holder{
     display: block;
     text-align: center;
   }
-  &__btn-holder{
-    display: block;
+  &__btn {
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    width: 170px;
+    height: 50px;
+    margin: 22px auto 0;
+    align-items: center;
+    background-color: transparent;
     border: 1px solid white;
-    max-width: 170px;
-    margin: 0 auto;
-    & a{
-      color: var(--color-white);
-      display: inline-block;
-      text-decoration: none;
-      padding: 15px 14px;
-      font-size: 14px;
-      font-weight: bold;
-      transition: opacity 0.3s;
-      &:hover{
-        opacity: 0.5;
-      }
+    padding: 14px 0;
+    color: white;
+    text-decoration: none;
+    @include media('<tablet') {
+      min-width: 142px;
+      font-size: 12px;
+    }
+    @include media('<tablet') {
+      margin: 20px 0 0;
     }
   }
 }
