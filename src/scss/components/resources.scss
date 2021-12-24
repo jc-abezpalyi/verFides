@@ -44,7 +44,6 @@
       display: block;
       padding: 20px;
     }
-
   }
 
   &__post {
@@ -52,30 +51,26 @@
     flex-direction: column;
     font-size: 14px;
     max-width: 429px;
-    @include media('<tablet') {
-      margin: 0 auto;
-      &:not(:last-child) {
-        &:after {
-          content: "";
-          width: 100%;
-          margin: 20px 0;
-          border: 1px solid #d7d7d7;
-        }
-      }
 
+    @include media('<tablet') {
+      padding-bottom: 20px;
+      margin: 0 auto 20px auto;
+      &:not(:last-child){
+        border-bottom: 1px solid #d7d7d7 ;
+      }
     }
 
     strong {
       display: inline-block;
       font-size: 18px;
       font-weight: normal;
-      color: #1a3255;
+      color: var(--color-darck-blue);
       padding-bottom: 7px;
     }
   }
 
   &__btn-holder {
-    border: 1px solid #1a3255;
+    border: 1px solid var(--color-darck-blue);
     position: relative;
     width: 170px;
     height: 50px;
@@ -89,7 +84,7 @@
       text-align: center;
       font-size: 14px;
       font-weight: bold;
-      color: #1a3255;
+      color: var(--color-darck-blue);
       text-decoration: none;
       transition: opacity 0.3s;
       &:after{
@@ -138,7 +133,7 @@
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;
-      color: #1a3255;
+      color: var(--color-darck-blue);
     }
     &:after{
       content: url("../../images/arrow_down.png");

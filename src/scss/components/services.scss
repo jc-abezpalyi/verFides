@@ -5,6 +5,10 @@
   &__title {
     @extend %title;
 
+    h1 {
+      font-weight: 300;
+    }
+
   }
 
   &__slider {
@@ -20,18 +24,24 @@
 
     & img {
       width: 100%;
+
     }
   }
+
 
   &__slider__slide-img {
     display: block;
     position: relative;
     height: 110px;
-    width: 112px;
+    min-width: 112px;
     justify-content: center;
     background-color: #769eca;
     border-radius: 50%;
     margin-bottom: 14px;
+    @include media('<tablet') {
+      margin-right: 22px;
+
+    }
 
     img {
       position: absolute;
@@ -43,46 +53,100 @@
     }
   }
 
+  &__slider__slide-wrapper {
+    @include media('<tablet') {
+      display: contents;
+      text-align: left;
+
+    }
+
+  }
+
   &__slider__slide-title-holder {
     max-width: 119px;
+
+    @include media('<tablet') {
+      max-width: 314px;
+
+    }
+
+    span {
+      @include media('<tablet') {
+        font-size: 14px;
+
+      }
+    }
   }
-  &__btn-prev{
-    &:after{
+
+  &__btn-prev {
+    &:after {
       content: url("../../images/slider_arrow_left.png");
       position: absolute;
-      left: 40px;
-      top: 38px;
+      bottom: -3px;
+      left: -96px;
+
     }
-    @include media ('<desktop') {
+
+    @include media('<desktop') {
       display: none;
     }
   }
-  &__btn-next{
-    &:after{
+
+  &__btn-next {
+    &:after {
       content: url("../../images/slider_arrow_left.png");
       position: absolute;
-      right: 40px;
-      top: 38px;
+      bottom: 5px;
+      right: -87px;
       transform: rotate(180deg);
     }
-    @include media ('<desktop') {
+
+    @include media('<desktop') {
       display: none;
+    }
+  }
+
+  .swiper__holder {
+    position: relative;
+    margin: 0 auto;
+    max-width: 768px;
+  }
+
+  &__image-block {
+    width: 100%;
+    min-height: 300px;
+
+    img {
+      width: 100%;
+      min-height: 300px;
+      object-fit: cover;
     }
   }
 }
 
 .swiper-wrapper {
+  @include media('<tablet') {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
+  }
 
 }
 
 .swiper-slide {
   text-align: center;
   font-size: 18px;
-
-  /* Center slide text vertically */
+  margin-bottom: 20px;
+  max-width: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @include media('<tablet') {
+    &:not(:last-child) {
+      border-bottom: 1px solid #d7d7d7;
+    }
+  }
 }
 
