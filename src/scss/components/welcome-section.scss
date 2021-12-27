@@ -1,5 +1,9 @@
 .welcome-section {
   margin-bottom: 100px;
+  border-bottom: 1px solid #a5a5a5 ;
+  @include media('<tablet'){
+    margin-bottom: 50px;
+  }
 
   &__title {
     @extend %title;
@@ -20,7 +24,7 @@
       font-size: 18px;
       padding: 0 20px;
       @include media('<tablet') {
-        font-size: 28px;
+        font-size: 14px;
         font-weight: normal;
         text-align: center;
       }
@@ -30,7 +34,8 @@
   &__posts {
     padding: 0 20px;
     max-width: 1000px;
-    margin: 0 auto;
+    margin: 0 auto 20px;
+
     @include media('<tablet') {
       display: block;
     }
@@ -42,6 +47,7 @@
     column-gap: 25px;
     column-fill: balance;
     margin: 33px 0 0;
+
 
     @include media('<tablet') {
       column-count: 1;

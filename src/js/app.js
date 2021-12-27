@@ -3,8 +3,6 @@
 // This file will be compiled into app.js
 // Feel free with using ES6 here.
 import $ from 'jquery';
-// import { swiper } from './modules/swiper';
-// import { Swiper } from 'swiper';
 import servicesSlider from './modules/swiper';
 import burger from './modules/burger';
 import videoControl from './modules/video-control';

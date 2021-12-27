@@ -100,7 +100,7 @@ $media-expressions: (
   --headings-sizes-h6: 1.5rem;
   // Base font styles for headings mobile
   @include media('<tablet'){
-    --headings-sizes-h1: 46px;
+    --headings-sizes-h1: 23px;
     --headings-sizes-h2: 2.7rem;
     --headings-sizes-h3: 2.4rem;
     --headings-sizes-h4: 2.1rem;

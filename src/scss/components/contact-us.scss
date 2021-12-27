@@ -1,14 +1,20 @@
 .contact{
   margin-bottom: 100px;
+  @include media('<tablet'){
+    margin-bottom: 10px;
+  }
 &__sub-title{
-  max-width: 794px;
+  max-width: 860px;
   margin: 0 auto 56px;
 
   h3{
     font-size: 18px;
     text-align: center;
     font-weight: normal;
-    padding: 20px;
+    padding: 0 20px;
+    @include media('<tablet'){
+      font-size: 14px;
+    }
   }
 }
   &__title{
@@ -22,6 +28,7 @@
     max-width: 876px;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 0 20px;
     margin: 0 auto;
   }
   &__card{
@@ -35,6 +42,10 @@
     margin-bottom: 28px;
     display: block;
     font-size: 18px;
+    @include media('<tablet'){
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
 
     &:after{
       display: block;
@@ -48,8 +59,14 @@
   &__card-image-holder{
     img{
       width: 220px;
+      @include media("<tablet"){
+        width: 110px;
+      }
     }
     margin-bottom: 25px;
+    @include media('<tablet'){
+      margin-bottom: 7px;
+    }
   }
   &__card-info{
     max-width: 246px;
@@ -62,6 +79,10 @@
       display: block;
       font-size: 14px;
       line-height: 1.43;
+      @include media('<tablet'){
+        line-height: 15px;
+        font-size: 12px;
+      }
     }
   }
   &__card-contacts{
@@ -70,6 +91,10 @@
     span{
       display: block;
       line-height: 1.43;
+      @include media('<tablet'){
+        font-size: 12px;
+        line-height: 15px;
+      }
       a{
         color: black;
         text-decoration: none;

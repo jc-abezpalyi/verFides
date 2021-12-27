@@ -8,15 +8,15 @@
     h1{
       font-weight: 300;
     }
-
   }
 
 &__person-cards{
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  margin: 61px 0 10px;
+  margin: 61px 0 0;
   @include media('<tablet'){
+    margin: 0 0 50px;
     justify-content: space-evenly;
   }
 
@@ -27,22 +27,36 @@
     padding: 0 20px;
     align-items: center;
     @include media('<tablet'){
-      padding-bottom: 93px;
+      padding: 33px 10px 0 10px;
+      min-height: 100%;
+      max-width: 170px;
     }
   }
   &__person-photo{
-    margin-bottom: 25px;
     width: 180px;
     height: 180px;
+    margin: 0 auto;
+    @include media('<tablet'){
+      width: 90px;
+      height: 90px;
+    }
   }
   &__person-info{
     text-align: center;
-    margin-bottom: 6px;
-    .person__name{
+    margin-bottom: 2px;
+
+    .person__name {
       font-size: 18px;
+      @include media('<tablet'){
+        font-size: 14px;
+      }
     }
-    .person__position{
+    .person__position {
       font-size: 14px;
+      @include media('<tablet'){
+        font-size: 12px;
+      }
+
     }
   }
   &__person-socio{
@@ -50,6 +64,15 @@
     text-align: center;
     font-size: 14px;
     font-weight: bold;
+
+
+
+    a {
+      text-decoration: none;
+    }
+    a:nth-child(2){
+      margin-left: 10px;
+    }
     @include media('<tablet'){
       span{
         display: none;
@@ -62,6 +85,9 @@
     max-width: 170px  ;
     text-align: center;
     margin: 0 auto 20px;
+    @include media('<tablet'){
+      max-width: 144px;
+    }
 
     & a {
       display: inline-block;
