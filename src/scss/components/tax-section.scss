@@ -56,11 +56,15 @@
     padding: 14px 0;
     color: var(--color-white);
     text-decoration: none;
+    transition: opacity 0.3s;
     @include media('<tablet') {
       min-width: 142px;
       font-size: 12px;
       margin: 20px 0 0;
       padding: 14px;
+    }
+    &:hover{
+      opacity: 0.5;
     }
   }
 }

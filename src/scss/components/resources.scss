@@ -51,6 +51,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 36px;
+    padding: 0 20px;
     @include media('<tablet') {
       display: block;
       padding: 20px;

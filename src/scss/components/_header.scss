@@ -24,7 +24,6 @@
 
   @include media('<desktop') {
     &__list-burger {
-
       position: absolute;
       overflow: scroll;
       width: 100%;
