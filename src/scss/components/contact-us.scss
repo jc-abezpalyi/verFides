@@ -1,29 +1,33 @@
-.contact{
+.contact {
   margin-bottom: 100px;
-  @include media('<tablet'){
+  @include media('<tablet') {
     margin-bottom: 10px;
   }
-&__sub-title{
-  max-width: 860px;
-  margin: 0 auto 56px;
 
-  h3{
-    font-size: 18px;
-    text-align: center;
-    font-weight: normal;
-    padding: 0 20px;
-    @include media('<tablet'){
-      font-size: 14px;
+  &__sub-title {
+    max-width: 860px;
+    margin: 0 auto 56px;
+
+    h3 {
+      font-size: 18px;
+      text-align: center;
+      font-weight: normal;
+      padding: 0 20px;
+      @include media('<tablet') {
+        font-size: 14px;
+      }
     }
   }
-}
-  &__title{
+
+  &__title {
     @extend %title;
-    h1{
+
+    h1 {
       font-weight: 300;
     }
   }
-  &__cards{
+
+  &__cards {
     display: flex;
     max-width: 876px;
     flex-wrap: wrap;
@@ -31,23 +35,25 @@
     padding: 0 20px;
     margin: 0 auto;
   }
-  &__card{
+
+  &__card {
     text-align: center;
     max-width: 300px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       margin: 0 auto 40px;
     }
   }
-  &__card-title{
+
+  &__card-title {
     margin-bottom: 28px;
     display: block;
     font-size: 18px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       font-size: 14px;
       margin-bottom: 3px;
     }
 
-    &:after{
+    &:after {
       display: block;
       content: "";
       width: 10px;
@@ -56,46 +62,53 @@
     }
 
   }
-  &__card-image-holder{
-    img{
+
+  &__card-image-holder {
+    img {
       width: 220px;
-      @include media("<tablet"){
+      @include media("<tablet") {
         width: 110px;
       }
     }
+
     margin-bottom: 25px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       margin-bottom: 7px;
     }
   }
-  &__card-info{
+
+  &__card-info {
     max-width: 246px;
     margin: 0 auto;
   }
-  &__card-address{
+
+  &__card-address {
     margin: 0 auto 20px;
 
-    span{
+    span {
       display: block;
       font-size: 14px;
       line-height: 1.43;
-      @include media('<tablet'){
+      @include media('<tablet') {
         line-height: 15px;
         font-size: 12px;
       }
     }
   }
-  &__card-contacts{
+
+  &__card-contacts {
     text-align: left;
     font-size: 14px;
-    span{
+
+    span {
       display: block;
       line-height: 1.43;
-      @include media('<tablet'){
+      @include media('<tablet') {
         font-size: 12px;
         line-height: 15px;
       }
-      a{
+
+      a {
         color: black;
         text-decoration: none;
       }

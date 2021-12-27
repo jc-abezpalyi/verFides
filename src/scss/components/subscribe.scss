@@ -5,6 +5,7 @@
   @include media('<tablet') {
     padding: 36px 0 39px;
   }
+
   &__container {
     max-width: 1000px;
     display: flex;
@@ -16,6 +17,7 @@
       padding: 0 30px;
     }
   }
+
   &__form {
     width: 100%;
     display: flex;
@@ -30,6 +32,7 @@
       border: none
     }
   }
+
   &__text {
     color: var(--color-white);
     text-align: center;
@@ -39,11 +42,13 @@
       margin: 0 0 16px;
     }
   }
+
   &__input {
     width: 353px;
     height: 50px;
     color: var(--color-white);
     background-color: rgba(255, 255, 255, 0.1);
+
     & {
       margin-right: 30px;
       @include media('<tablet') {
@@ -54,6 +59,7 @@
     }
 
   }
+
   &__btn {
     min-width: 170px;
     font-weight: 700;

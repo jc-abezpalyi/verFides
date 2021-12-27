@@ -1,91 +1,101 @@
-.management-section{
+.management-section {
   margin-bottom: 78px;
-  &__wrapper{
+
+  &__wrapper {
     max-width: 1000px;
   }
+
   &__title {
     @extend %title;
-    h1{
+
+    h1 {
       font-weight: 300;
     }
   }
 
-&__person-cards{
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  margin: 61px 0 0;
-  @include media('<tablet'){
-    margin: 0 0 50px;
-    justify-content: space-evenly;
+  &__person-cards {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin: 61px 0 0;
+    @include media('<tablet') {
+      margin: 0 0 50px;
+      justify-content: space-evenly;
+    }
+
   }
 
-}
-  &__person-card{
-   min-height: 300px;
+  &__person-card {
+    min-height: 300px;
     max-width: 225px;
     padding: 0 20px;
     align-items: center;
-    @include media('<tablet'){
+    @include media('<tablet') {
       padding: 33px 10px 0 10px;
       min-height: 100%;
       max-width: 170px;
     }
   }
-  &__person-photo{
+
+  &__person-photo {
     width: 180px;
     height: 180px;
     margin: 0 auto;
-    @include media('<tablet'){
+    @include media('<tablet') {
       width: 90px;
       height: 90px;
     }
   }
-  &__person-info{
+
+  &__person-info {
     text-align: center;
     margin-bottom: 2px;
 
     .person__name {
       font-size: 18px;
-      @include media('<tablet'){
+      @include media('<tablet') {
         font-size: 14px;
       }
     }
+
     .person__position {
       font-size: 14px;
-      @include media('<tablet'){
+      @include media('<tablet') {
         font-size: 12px;
       }
 
     }
   }
-  &__person-socio{
+
+  &__person-socio {
     color: var(--color-darck-blue);
     text-align: center;
     font-size: 14px;
     font-weight: bold;
 
 
-
     a {
       text-decoration: none;
     }
-    a:nth-child(2){
+
+    a:nth-child(2) {
       margin-left: 10px;
     }
-    @include media('<tablet'){
-      span{
+
+    @include media('<tablet') {
+      span {
         display: none;
       }
     }
 
   }
-  &__btn-holder{
-    border: 1px solid var(--color-darck-blue) ;
-    max-width: 170px  ;
+
+  &__btn-holder {
+    border: 1px solid var(--color-darck-blue);
+    max-width: 170px;
     text-align: center;
     margin: 0 auto 20px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       max-width: 144px;
     }
 
@@ -98,10 +108,12 @@
       color: var(--color-darck-blue);
       transition: opacity 0.3s;
       margin-right: 5px;
-      &:hover{
+
+      &:hover {
         opacity: 0.5;
       }
-      &:after{
+
+      &:after {
         content: url("../../images/btn_arrow2.png");
         margin-left: 6px;
       }

@@ -4,15 +4,18 @@
   @include media('<tablet') {
     padding: 35px 0 50px;
   }
-  &__title{
+
+  &__title {
     @extend %title;
     margin-bottom: 0;
-    h1{
+
+    h1 {
       font-weight: 300;
       font-style: italic;
       color: var(--color-white)
     }
   }
+
   &__container {
     max-width: 1000px;
     display: flex;
@@ -24,6 +27,7 @@
       padding: 0 30px;
     }
   }
+
   &__text {
     font-size: 18px;
     text-align: center;
@@ -34,6 +38,7 @@
       margin: 16px 0 12px;
     }
   }
+
   &__form {
     width: 100%;
     max-width: 735px;
@@ -43,8 +48,9 @@
       max-width: 535px;
       flex-direction: column;
     }
+
     input {
-      border:none;
+      border: none;
       max-width: 353px;
       height: 50px;
       @include media('<tablet') {
@@ -53,6 +59,7 @@
       }
     }
   }
+
   &__column {
     display: flex;
     flex-direction: column;
@@ -62,27 +69,32 @@
       margin: 0 0 20px;
     }
   }
+
   &__note {
     width: 100%;
     font-weight: 700;
     color: var(--color-white);
     opacity: 0.5;
     margin: 0 0 8px 8px;
-    @include media('<tablet'){
+    @include media('<tablet') {
       font-size: 12px;
     }
   }
+
   &__input {
     width: 353px;
     background-color: rgba(255, 255, 255, 0.1);
+
     &:not(:last-child) {
       margin: 0 0 20px;
     }
+
     @include media('<tablet') {
       width: 100%;
       font-size: 12px;
     }
   }
+
   &__textarea {
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
@@ -96,6 +108,7 @@
       font-size: 12px;
     }
   }
+
   &__btn {
     margin: 40px 0 0;
     align-items: center;
@@ -113,7 +126,8 @@
       margin: 20px 0 0;
 
     }
-    &:hover{
+
+    &:hover {
       opacity: 0.5;
     }
 

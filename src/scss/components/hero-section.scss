@@ -41,7 +41,7 @@
       border: 1px solid var(--color-white);
       width: 250px;
       margin: 30px auto 36px;
-      @include media('<tablet'){
+      @include media('<tablet') {
         width: 131px;
         margin: 13px auto 36px;
       }
@@ -74,7 +74,7 @@
       border: 1px solid var(--color-white);
       padding: 0 17px 10px;
       color: var(--color-white);
-      @include media('<tablet'){
+      @include media('<tablet') {
         padding: 5px 13px;
       }
     }
