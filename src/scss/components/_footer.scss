@@ -32,6 +32,7 @@
 
   &__nav-list {
     @extend %listreset;
+
     position: relative;
     max-width: 600px;
     display: flex;
@@ -75,7 +76,6 @@
         margin-right: 0;
       }
     }
-
     @include media('<phone') {
       justify-content: flex-start;
     }

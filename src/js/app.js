@@ -7,7 +7,6 @@ import servicesSlider from './modules/swiper';
 import burger from './modules/burger';
 import videoControl from './modules/video-control';
 
-// When DOM is ready
 $(() => {
   servicesSlider.init();
   burger();
