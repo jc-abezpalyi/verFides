@@ -1,5 +1,5 @@
 .form-questions-section {
-  background-color: #1a3255;
+  background-color: var(--color-darck-blue);
   padding: 70px 0 105px;
   @include media('<tablet') {
     padding: 35px 0 50px;
@@ -59,7 +59,6 @@
       }
     }
   }
-
   &__column {
     display: flex;
     flex-direction: column;
@@ -69,7 +68,6 @@
       margin: 0 0 20px;
     }
   }
-
   &__note {
     width: 100%;
     font-weight: 700;
@@ -108,7 +106,6 @@
       font-size: 12px;
     }
   }
-
   &__btn {
     margin: 40px 0 0;
     align-items: center;
@@ -124,12 +121,9 @@
       min-width: 142px;
       font-size: 12px;
       margin: 20px 0 0;
-
     }
-
     &:hover {
       opacity: 0.5;
     }
-
   }
 }
