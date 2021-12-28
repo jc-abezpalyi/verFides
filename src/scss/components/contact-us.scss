@@ -64,8 +64,26 @@
   }
 
   &__card-image-holder {
+    position: relative;
+    &:hover {
+      &:after {
+        content: '';
+        position: absolute;
+        min-width: 100%;
+        min-height: 100%;
+        background-color: var(--color-darck-blue);
+        border-radius: 50%;
+        left: 0;
+        opacity: 0.7;
+        @include media('<tablet') {
+          display: none;
+        }
+      }
+    }
+
     img {
       width: 220px;
+
       @include media("<tablet") {
         width: 110px;
       }

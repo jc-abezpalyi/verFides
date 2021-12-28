@@ -41,7 +41,7 @@
     border-radius: 50%;
     margin-bottom: 10px;
     @include media('<tablet') {
-      margin-right: 9px;
+      margin: 0 9px 0 0;
       height: 56px;
       min-width: 56px;
     }
@@ -56,7 +56,6 @@
         width: 18px;
       }
     }
-
   }
 
   &__slider__slide-wrapper {
@@ -83,7 +82,7 @@
 
   &__btn-prev {
     &:after {
-      content: url("../../images/slider_arrow_left.png");
+      content: url("../images/slider_arrow_left.png");
       position: absolute;
       bottom: -3px;
       left: -96px;
@@ -97,7 +96,7 @@
 
   &__btn-next {
     &:after {
-      content: url("../../images/slider_arrow_left.png");
+      content: url("../images/slider_arrow_left.png");
       position: absolute;
       bottom: 5px;
       right: -87px;

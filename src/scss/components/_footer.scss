@@ -54,6 +54,7 @@
       transform: translateX(-50%);
       @include media('<tablet') {
         width: 100%;
+        display: none;
       }
     }
 
@@ -66,7 +67,6 @@
   }
 
   li {
-    display: flex;
     margin-bottom: 6px;
 
     &:not(:last-child) {
@@ -111,6 +111,7 @@
     justify-content: center;
     @include media('<tablet') {
       margin-bottom: 20px;
+      display: none;
     }
     @include media('<phone') {
       flex-direction: column;
@@ -133,9 +134,8 @@
   }
 
   &__logo {
+    display: block;
     width: 92px;
-    display: flex;
-    align-items: center;
     margin: 0 0 6px;
   }
 
