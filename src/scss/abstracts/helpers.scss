@@ -32,9 +32,9 @@
   &:after {
     display: block;
     content: "";
-    border: 1px solid #769eca;
+    border-bottom: 1px solid #769eca;
     width: 250px;
-    margin: 14px auto 36px;
+    margin: 32px auto 36px;
     @include media('<tablet'){
       width: 130px;
     }

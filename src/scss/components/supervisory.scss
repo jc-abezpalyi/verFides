@@ -24,6 +24,10 @@
   &__block {
     width: 100%;
     column-count: 3;
+    font-size: 14px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.43;
     column-gap: 30px;
     column-fill: balance;
     @include media('<desktop') {

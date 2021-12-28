@@ -1,5 +1,5 @@
 .resources {
-  margin-bottom: 58px;
+  margin-bottom: 36px;
   &__wrapper {
     max-width: 1000px;
     margin: 0 auto;
@@ -31,8 +31,8 @@
   &__post-title {
     display: block;
     text-align: center;
-    max-width: 786px;
-    margin: 0 auto 45px;
+    max-width: 829px;
+    margin: 0 auto 38px;
     padding: 0 20px;
     h3 {
       font-size: 18px;
@@ -45,7 +45,7 @@
   &__post-holder {
     display: flex;
     justify-content: space-around;
-    margin-bottom: 36px;
+    margin-bottom: 41px;
     padding: 0 20px;
     @include media('<tablet') {
       display: block;
@@ -114,6 +114,7 @@
     }
   }
   &__card {
+    padding-bottom: 20px;
     @include media('<tablet') {
       margin: 0 auto;
     }
@@ -123,6 +124,7 @@
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     text-align: center;
   }
   &__card-image-holder {
@@ -131,11 +133,6 @@
       @include media('<tablet') {
         width: 83px;
       }
-    }
-  }
-  &__card-res {
-    @include media('<tablet') {
-      display: none;
     }
   }
   &__card-title {

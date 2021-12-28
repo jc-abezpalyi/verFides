@@ -1,5 +1,5 @@
 .contact {
-  margin-bottom: 100px;
+  margin-bottom: 74px;
   @include media('<tablet') {
     margin-bottom: 10px;
   }
@@ -38,13 +38,9 @@
     }
   }
   &__card-title {
-    margin-bottom: 28px;
+    margin-bottom: 23px;
     display: block;
     font-size: 18px;
-    @include media('<tablet') {
-      font-size: 14px;
-      margin-bottom: 3px;
-    }
     &:after {
       display: block;
       content: "";
@@ -52,22 +48,25 @@
       margin: 9px auto 0;
       border: 1px solid black;
     }
+    @include media('<tablet') {
+      font-size: 14px;
+      margin-bottom: 3px;
+    }
   }
   &__card-image-holder {
     position: relative;
-    &:hover {
-      &:after {
-        content: '';
-        position: absolute;
-        min-width: 100%;
-        min-height: 100%;
-        background-color: var(--color-darck-blue);
-        border-radius: 50%;
-        left: 0;
-        opacity: 0.7;
-        @include media('<tablet') {
-          display: none;
-        }
+
+    &:after {
+      content: '';
+      position: absolute;
+      min-width: 100%;
+      min-height: 100%;
+      background-color: #002e5f;
+      border-radius: 50%;
+      left: 0;
+      opacity: 0.7;
+      @include media('<tablet') {
+        display: none;
       }
     }
     img {
@@ -99,7 +98,7 @@
     }
   }
   &__card-contacts {
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     span {
       display: block;

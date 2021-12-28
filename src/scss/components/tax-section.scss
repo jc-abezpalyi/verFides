@@ -11,13 +11,12 @@
   padding-top: 75px;
   &__title {
     @extend %title;
-    margin-bottom: -8px;
     & h1 {
       color: var(--color-white);
       font-weight: normal;
     }
-    &:after {
-      margin: 14px auto 20px;
+    &:after{
+      margin-bottom: -4px;
     }
   }
   &__description {

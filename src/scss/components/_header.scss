@@ -51,7 +51,7 @@
         content: '';
         width: 100%;
         margin-top: 10px;
-        border: 1px solid white;
+        border-bottom: 1px solid white;
         @include media("<desktop") {
           display: none;
         }
