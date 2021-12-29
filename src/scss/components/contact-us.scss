@@ -3,9 +3,14 @@
   @include media('<tablet') {
     margin-bottom: 10px;
   }
+
   &__sub-title {
     max-width: 860px;
     margin: 0 auto 56px;
+    @include media('<phone'){
+      margin-bottom: 20px;
+    }
+
     h3 {
       font-size: 18px;
       text-align: center;
@@ -16,12 +21,19 @@
       }
     }
   }
+
   &__title {
     @extend %title;
+
     h1 {
       font-weight: 300;
     }
+
+    @include media('<phone') {
+      margin-bottom: 0;
+    }
   }
+
   &__cards {
     display: flex;
     max-width: 876px;
@@ -30,6 +42,7 @@
     padding: 0 20px;
     margin: 0 auto;
   }
+
   &__card {
     text-align: center;
     max-width: 300px;
@@ -37,10 +50,12 @@
       margin: 0 auto 40px;
     }
   }
+
   &__card-title {
     margin-bottom: 23px;
     display: block;
     font-size: 18px;
+
     &:after {
       display: block;
       content: "";
@@ -48,11 +63,13 @@
       margin: 9px auto 0;
       border: 1px solid black;
     }
+
     @include media('<tablet') {
       font-size: 14px;
       margin-bottom: 3px;
     }
   }
+
   &__card-image-holder {
     position: relative;
 
@@ -69,17 +86,20 @@
         display: none;
       }
     }
+
     img {
       width: 220px;
       @include media("<tablet") {
         width: 110px;
       }
     }
+
     margin-bottom: 25px;
     @include media('<tablet') {
       margin-bottom: 7px;
     }
   }
+
   &__card-info {
     max-width: 246px;
     margin: 0 auto;
@@ -87,6 +107,7 @@
 
   &__card-address {
     margin: 0 auto 20px;
+
     span {
       display: block;
       font-size: 14px;
@@ -97,9 +118,11 @@
       }
     }
   }
+
   &__card-contacts {
     text-align: center;
     font-size: 14px;
+
     span {
       display: block;
       line-height: 1.43;
@@ -107,6 +130,7 @@
         font-size: 12px;
         line-height: 15px;
       }
+
       a {
         color: black;
         text-decoration: none;
@@ -114,3 +138,4 @@
     }
   }
 }
+
