@@ -72,7 +72,8 @@
     @include media('<desktop') {
       background-color: #043355;
       min-height: 58px;
-      padding: 11px 30px;
+      width: 200px;
+      padding: 0 56px;
     }
   }
   &__menu {
@@ -83,6 +84,9 @@
     padding-right: 20px;
     @media (max-width: 980px) {
       display: block;
+    }
+    svg{
+      width: 37px;
     }
   }
   .line {

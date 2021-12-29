@@ -2,6 +2,10 @@
   &__wrapper {
     padding-bottom: 80px;
     margin-bottom: 73px;
+    @include media('<phone'){
+      padding-bottom: 33px;
+      margin-bottom: 33px;
+    }
   }
   background-image: url(../images/banner2.webp);
   background-repeat: no-repeat;
@@ -9,8 +13,14 @@
   background-position: center;
   margin-bottom: 20px;
   padding-top: 75px;
+  @include media('<phone'){
+    padding-top: 33px;
+  }
   &__title {
     @extend %title;
+    @include media('<phone'){
+      margin-bottom: 14px;
+    }
     &-text {
       color: var(--color-white);
       font-weight: normal;
@@ -49,7 +59,7 @@
     @include media('<tablet') {
       min-width: 142px;
       font-size: 12px;
-      margin: 20px 0 0;
+      margin: 17px 0 0;
       padding: 14px;
     }
     &:hover {

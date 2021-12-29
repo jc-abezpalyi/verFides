@@ -1,9 +1,15 @@
 .services-section {
   margin-bottom: 71px;
   position: relative;
+  @include media('<tablet'){
+    margin-bottom: 34px;
+  }
 
   &__title {
     @extend %title;
+    @include media('<tablet'){
+      margin-bottom: 0;
+    }
 
     &-text {
       font-weight: 300;
@@ -16,6 +22,7 @@
     margin: 65px 0 83px;
     @include media('<tablet') {
       margin-bottom: 35px;
+      margin-top: 0;
     }
   }
 
@@ -23,7 +30,7 @@
     display: block;
     position: relative;
     height: 110px;
-    min-width: 112px;
+    width: 110px;
     justify-content: center;
     border-radius: 50%;
     margin-bottom: 10px;
@@ -31,9 +38,9 @@
 
 
     @include media('<tablet') {
-      margin: 0 9px 0 0;
+      margin: 0 9px 10px 0;
       height: 56px;
-      min-width: 56px;
+      width: 56px;
     }
 
     img {
@@ -81,7 +88,9 @@
 
     span {
       @include media('<tablet') {
+        display: inline-block;
         font-size: 14px;
+        padding-bottom: 20px;
       }
     }
   }
@@ -147,6 +156,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+      padding-left: 14px;
     }
   }
 
@@ -159,6 +169,7 @@
     align-items: center;
     @include media('<tablet') {
       margin-bottom: 8px;
+      justify-content: flex-start;
       &:not(:last-child) {
         border-bottom: 1px solid #d7d7d7;
       }
