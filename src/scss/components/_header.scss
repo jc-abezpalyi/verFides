@@ -2,12 +2,14 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
+  align-items: center;
   z-index: 2;
   top: 0;
   right: 0;
   left: 0;
   @include media('<desktop') {
     position: fixed;
+    align-items: stretch;
     height: 57px;
     background-color: var(--color-white);
   }

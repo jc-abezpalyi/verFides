@@ -6,7 +6,7 @@
   &__title {
     @extend %title;
     margin-bottom: 0;
-    h1 {
+    &-text {
       font-weight: 300;
     }
   }

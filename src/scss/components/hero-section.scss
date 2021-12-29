@@ -3,13 +3,13 @@
   margin-bottom: 68px;
   &__video-container {
     position: relative;
-    & img {
+    &-img {
       position: absolute;
       width: 100%;
       height: 100vh;
       object-fit: cover;
     }
-    & video {
+    .hero-section__bg-video {
       position: absolute;
       width: 100%;
       height: 100vh;
@@ -19,7 +19,7 @@
       }
     }
   }
-  &__title h1 {
+  &__title-item {
     display: none;
     font-size: 23px;
     z-index: 1;
@@ -50,19 +50,19 @@
   }
   &__btn-go-bott {
     position: absolute;
-    font-size: 20px;
+    font-size: 27px;
     bottom: 80px;
     margin-left: auto;
     margin-right: auto;
     left: 0;
     right: 0;
     text-align: center;
-    & a {
+    &-link{
       text-decoration: none;
     }
-    & span {
+    &-arrow {
       border: 1px solid var(--color-white);
-      padding: 0 17px 10px;
+      padding:0 18px 12px;
       color: var(--color-white);
       @include media('<tablet') {
         padding: 5px 13px;

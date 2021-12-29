@@ -58,13 +58,13 @@ $media-expressions: (
   --color-darck-blue: #1a3255;
 
   // Fonts
-  --font-open-sans: "Open Sans", sans-serif;
-  --font-sans-serif: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+  --font-sans-serif: 'Open Sans', Arial, 'Helvetica Neue', Helvetica, sans-serif;
   --font-serif: 'Times New Roman', Times, Baskerville, Georgia, serif;
 
   // Body base
   --base-background-color: var(--color-white);
-  --base-font-family: var(--font-open-sans);
+  --base-font-family: var(--font-sans-serif);
   --base-font-size: 1.6rem;
   --base-line-height: 1.2;
   --base-text-color: var(--color-main-grey);

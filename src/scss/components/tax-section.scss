@@ -11,7 +11,7 @@
   padding-top: 75px;
   &__title {
     @extend %title;
-    & h1 {
+    &-text {
       color: var(--color-white);
       font-weight: normal;
     }

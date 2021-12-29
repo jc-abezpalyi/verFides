@@ -9,7 +9,7 @@
     @extend %title;
     margin-bottom: 0;
 
-    h1 {
+    &-text {
       font-weight: 300;
       font-style: italic;
       color: var(--color-white)
@@ -49,16 +49,35 @@
       flex-direction: column;
     }
 
-    input {
+    .form-questions-section__input {
+      @include placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
       border: none;
       max-width: 353px;
+      padding-left: 19px;
       height: 50px;
+      width: 353px;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: rgba(255, 255, 255, 0.1);
       @include media('<tablet') {
         max-width: 100%;
         height: 35px;
       }
+
+
+      &:not(:last-child) {
+        margin: 0 0 20px;
+      }
+
+      @include media('<tablet') {
+        width: 100%;
+        font-size: 12px;
+      }
     }
   }
+
   &__column {
     display: flex;
     flex-direction: column;
@@ -68,6 +87,7 @@
       margin: 0 0 20px;
     }
   }
+
   &__note {
     width: 100%;
     color: var(--color-white);
@@ -76,22 +96,6 @@
     font-size: 14px;
     font-weight: bold;
     @include media('<tablet') {
-      font-size: 12px;
-    }
-  }
-
-  &__input {
-    width: 353px;
-    font-size: 14px;
-    font-weight: bold;
-    background-color: rgba(255, 255, 255, 0.1);
-
-    &:not(:last-child) {
-      margin: 0 0 20px;
-    }
-
-    @include media('<tablet') {
-      width: 100%;
       font-size: 12px;
     }
   }
@@ -106,11 +110,15 @@
     font-size: 14px;
     padding-top: 18px;
     padding-left: 20px;
+    @include placeholder {
+      color: rgba(255, 255, 255, 0.7);
+    }
     @include media('<tablet') {
       width: 100%;
       font-size: 12px;
     }
   }
+
   &__btn {
     margin: 40px 0 0;
     align-items: center;
@@ -128,6 +136,7 @@
       font-size: 12px;
       margin: 20px 0 0;
     }
+
     &:hover {
       opacity: 0.5;
     }
