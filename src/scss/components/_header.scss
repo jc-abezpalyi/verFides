@@ -76,12 +76,12 @@
       padding: 0 56px;
     }
   }
-  &__menu {
+  &__menu-btn {
     z-index: 10;
     background-color: transparent;
     display: none;
     border: none;
-    padding-right: 20px;
+    padding: 0 47px;
     @media (max-width: 980px) {
       display: block;
     }

@@ -54,6 +54,7 @@
       font-weight: normal;
       @include media('<tablet') {
         font-size: 12px;
+        margin-bottom: 16px;
       }
     }
   }

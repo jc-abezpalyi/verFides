@@ -2,7 +2,7 @@
   background-color: var(--color-darck-blue);
   padding: 70px 0 105px;
   @include media('<tablet') {
-    padding: 35px 0 50px;
+    padding: 33px 0;
   }
 
   &__title {

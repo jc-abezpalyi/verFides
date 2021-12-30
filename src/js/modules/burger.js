@@ -2,7 +2,7 @@ import $ from 'jquery';
 
 const burger = () => {
   const $body = $('body');
-  const $btn = $body.find('.nav__menu');
+  const $btn = $body.find('.nav__menu-btn');
 
   if (!$btn.length) {
     return;
