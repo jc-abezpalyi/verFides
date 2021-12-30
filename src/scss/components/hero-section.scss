@@ -1,6 +1,9 @@
 .hero-section {
   height: 100vh;
   margin-bottom: 68px;
+  @include media('<phone'){
+    margin-bottom: 31px;
+  }
   &__video-container {
     position: relative;
     &-img {

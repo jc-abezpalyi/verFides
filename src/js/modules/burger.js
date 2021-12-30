@@ -17,7 +17,6 @@ const burger = () => {
     $body.toggleClass(OPENED_MENU_CLASSNAME);
     $navList.toggleClass(BURGER_ACTIVE);
     $btn.toggleClass('opened');
-    $btn.setAttribute('aria-expanded', $btn.classList.contains('opened'));
   };
 
   $btn.click(() => burgerHandler());
