@@ -7,7 +7,6 @@
     max-width: 1000px;
   }
   &__title {
-    @extend %title;
     @include media('<phone'){
       margin-bottom: -10px;
     }

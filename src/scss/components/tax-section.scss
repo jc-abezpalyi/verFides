@@ -17,7 +17,6 @@
     padding-top: 33px;
   }
   &__title {
-    @extend %title;
     @include media('<phone') {
       margin-bottom: 14px;
     }

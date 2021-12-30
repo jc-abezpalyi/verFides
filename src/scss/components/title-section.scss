@@ -1,0 +1,19 @@
+.title-section{
+  display: block;
+  text-align: center;
+  font-weight: 300;
+  font-style: italic;
+  margin-bottom: 30px;
+
+  &:after {
+    display: block;
+    content: "";
+    border-bottom: 1px solid #769eca;
+    width: 250px;
+    margin: 32px auto 36px;
+    @include media('<tablet'){
+      width: 130px;
+      margin: 19px auto 19px;
+    }
+  }
+}

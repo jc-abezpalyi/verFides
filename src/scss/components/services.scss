@@ -6,7 +6,6 @@
   }
 
   &__title {
-    @extend %title;
     @include media('<tablet'){
       margin-bottom: 0;
     }

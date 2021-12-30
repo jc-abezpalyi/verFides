@@ -4,7 +4,6 @@
     padding: 45px 0;
   }
   &__title {
-    @extend %title;
     margin-bottom: 0;
     &-text {
       font-weight: 300;

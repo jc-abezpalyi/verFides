@@ -5,7 +5,6 @@
     margin-bottom: 25px;
   }
   &__title {
-    @extend %title;
     @include media('<phone'){
       margin-bottom: 0;
     }

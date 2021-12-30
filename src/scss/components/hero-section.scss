@@ -23,7 +23,6 @@
     }
   }
   &__title{
-   @extend %title;
     display: none;
     position: absolute;
     z-index: 1;
