@@ -77,11 +77,9 @@
     @include media('<tablet') {
       margin-top: 5px;
     }
-
     a {
       text-decoration: none;
     }
-
     a:nth-child(2) {
       margin-left: 10px;
     }
@@ -91,7 +89,6 @@
         display: none;
       }
     }
-
   }
 
   &__btn-holder {
@@ -118,13 +115,11 @@
          font-weight: bold;
          padding: 11px;
        }
-
       &:hover {
         opacity: 0.5;
       }
     }
   }
-
   .management-btn-arrow{
     transform: rotate(-90deg);
     width: 17px;
