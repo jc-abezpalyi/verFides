@@ -1,3 +1,10 @@
+$slider-colors: (
+  color-blue: #769eca,
+  color-dark-blue: #1a3255,
+  color-purple: #6c6b86,
+  color-light-blue: #869bac,
+);
+
 .services-section {
   margin-bottom: 71px;
   position: relative;
@@ -46,24 +53,15 @@
       }
     }
   }
-
+  
   .slide-color {
-    &-2, &-5 {
-      background-color: #769eca;
-    }
-
-    &-3, &-6 {
-      background-color: #1a3255;
-    }
-
-    &-4, &-7 {
-      background-color: #6c6b86;
-    }
-
-    &-5, &-8 {
-      background-color: #869bac;
+    @each $status, $color in $slider-colors {
+      &--#{$status} {
+        background: $color;
+      }
     }
   }
+
 
   &__slider__slide-wrapper {
     @include media('<tablet') {
