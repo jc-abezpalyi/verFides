@@ -23,10 +23,6 @@
   }
 
   &__title {
-    &-text {
-      font-weight: 300;
-    }
-
     @include media('<phone') {
       margin-bottom: -7px;
     }
@@ -42,6 +38,7 @@
   }
 
   &__card {
+    padding-bottom: 20px;
     text-align: center;
     max-width: 300px;
     @include media('<tablet') {
@@ -109,18 +106,14 @@
 
   &__card-address {
     margin: 0 auto 20px;
+    font-size: 14px;
+    line-height: 1.43;
     @include media('<phone'){
       margin-bottom: 13px;
     }
-
-    span {
-      display: block;
-      font-size: 14px;
-      line-height: 1.43;
-      @include media('<tablet') {
-        line-height: 15px;
-        font-size: 12px;
-      }
+    @include media('<tablet') {
+      line-height: 15px;
+      font-size: 12px;
     }
   }
 

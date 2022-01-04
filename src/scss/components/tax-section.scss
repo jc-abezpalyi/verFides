@@ -7,10 +7,8 @@
       margin-bottom: 33px;
     }
   }
-  background-image: url(../images/banner2.webp);
-  background-repeat: no-repeat;
+  background: url(../images/banner2.webp) no-repeat center;
   background-size: cover;
-  background-position: center;
   margin-bottom: 20px;
   padding-top: 75px;
   @include media('<phone') {

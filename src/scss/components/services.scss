@@ -9,10 +9,6 @@
     @include media('<tablet') {
       margin-bottom: 0;
     }
-
-    &-text {
-      font-weight: 300;
-    }
   }
 
   &__slider {
@@ -26,7 +22,6 @@
   }
 
   &__slider__slide-img {
-    display: block;
     position: relative;
     height: 110px;
     width: 110px;
@@ -94,7 +89,7 @@
 
   &__btn-prev {
     &:after {
-      content: url("../images/slider_arrow_left.png");
+      content: url("../images/slider-arrow-left.png");
       position: absolute;
       bottom: -3px;
       left: -96px;
@@ -107,7 +102,7 @@
 
   &__btn-next {
     &:after {
-      content: url("../images/slider_arrow_left.png");
+      content: url("../images/slider-arrow-left.png");
       position: absolute;
       bottom: 5px;
       right: -87px;

@@ -25,7 +25,7 @@
     &:after {
       content: "";
       width: 100%;
-      border: 1px solid var(--color-main-grey);
+      border-bottom: 1px solid var(--color-main-grey);
       opacity: 0.25;
 
     }
@@ -89,10 +89,8 @@
     font-size: 16px;
     color: grey;
     text-decoration: none;
-    transition: opacity 0.3s;
 
     &:hover {
-      opacity: 0.5;
       text-decoration: underline;
     }
 
@@ -107,6 +105,7 @@
 
   &__links-list {
     @extend %listreset;
+
     width: 100%;
     display: flex;
     flex-wrap: wrap;
@@ -141,8 +140,10 @@
 
   &__logo {
     display: block;
-    width: 92px;
     margin: 0 0 6px;
+    img{
+      width: 92px;
+    }
   }
 
   &__notes {

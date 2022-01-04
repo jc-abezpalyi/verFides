@@ -9,7 +9,6 @@
       margin-bottom: 0;
     }
     &-text {
-      font-weight: 300;
       font-style: italic;
       &:after{
         @include media('<phone'){

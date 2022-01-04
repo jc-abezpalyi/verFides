@@ -7,11 +7,9 @@ const servicesSlider = () => {
   const init = () => {
     const $win = $(window);
     let slider;
-    let destroy = true;
 
     const sliderInit = () => {
       slider = new Swiper('.services-section__slider', {
-        init: false,
         slidesPerView: 4,
         direction: 'horizontal',
         speed: 300,
@@ -22,20 +20,14 @@ const servicesSlider = () => {
           prevEl: '.services-section__btn-prev',
         },
       });
-      slider.init();
-      destroy = false;
     };
-
-    const sliderDestroy = () => {
-      slider.destroy();
-      destroy = true;
-    };
-
-    if ($win.width() > 768) sliderInit();
+    if ($win.width() > 768) {
+      sliderInit();
+    }
     $win.on('resize', () => {
-      if ($win.width() <= 768 && !destroy) {
-        sliderDestroy();
-      } else if ($win.width() > 768 && destroy) {
+      if ($win.width() <= 768 && !slider.destroyed) {
+        slider.destroy();
+      } else if ($win.width() > 768 && slider.destroyed) {
         sliderInit();
       }
     });

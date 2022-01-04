@@ -5,12 +5,6 @@
     margin: 0 auto;
   }
 
-  &__title {
-    &-text {
-      font-weight: 400;
-    }
-  }
-
   &__link {
 
     color: black;
@@ -49,6 +43,7 @@
     &-text {
       font-size: 18px;
       font-weight: normal;
+
       @include media('<tablet') {
         font-size: 12px;
         margin-bottom: 16px;
@@ -74,6 +69,10 @@
     font-size: 14px;
     max-width: 429px;
 
+    p {
+      line-height: 23px;
+    }
+
     @include media('<tablet') {
       font-size: 12px;
       padding-bottom: 20px;
@@ -88,7 +87,6 @@
     }
 
     &-heading {
-      display: inline-block;
       font-size: 18px;
       font-weight: normal;
       color: var(--color-darck-blue);

@@ -14,11 +14,11 @@ const videoControl = () => {
     if (videoState) {
       video.pause();
       videoState = !videoState;
-      btn.innerHTML = `<span>Play</span> ${playBtn}`;
+      btn.innerHTML = `<span>${btn.dataset.play}</span> ${playBtn}`;
     } else {
       video.play();
       videoState = !videoState;
-      btn.innerHTML = `<span>Pause</span> ${pauseBtn}`;
+      btn.innerHTML = `<span>${btn.dataset.pause}</span> ${pauseBtn}`;
     }
   };
   btn.addEventListener('click', videoHandler);

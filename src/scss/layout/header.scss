@@ -40,9 +40,10 @@
   }
   &__item {
     margin-right: 46px;
-    transition: opacity, transform 0.3s;
+    @include media('<desktop'){
+      transition: transform 0.3s;
+    }
     &:hover {
-      opacity: 0.5;
       @include media('<desktop') {
         transform: translateX(20px);
       }
@@ -64,6 +65,10 @@
     color: var(--color-white);
     font-size: 18px;
     text-decoration: none;
+    transition:opacity 0.3s;
+    &:hover{
+      opacity: 0.5;
+    }
   }
   &__logo--img {
     margin: 0;
@@ -125,4 +130,3 @@
     stroke-width: 6;
   }
 }
-

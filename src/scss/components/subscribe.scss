@@ -30,6 +30,9 @@
     }
 
     .subscribe-section__input {
+      @include placeholder {
+        color: rgba(255, 255, 255, 0.7);
+      }
       padding-left: 19px;
       border: none;
       width: 354px;
@@ -45,9 +48,7 @@
         font-size: 12px;
         padding-left: 12px;
       }
-      @include placeholder {
-        color: rgba(255, 255, 255, 0.7);
-      }
+     
 
     }
   }
