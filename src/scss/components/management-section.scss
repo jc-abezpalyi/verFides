@@ -102,13 +102,15 @@
     }
 
      a {
-      display: inline-block;
       font-weight: bold;
       font-size: 14px;
+      transition: opacity 0.3s;
+
+
+      display: inline-block;
       padding: 16px;
       text-decoration: none;
       color: var(--color-darck-blue);
-      transition: opacity 0.3s;
       margin-right: 5px;
        @include media('<tablet'){
          font-size: 12px;

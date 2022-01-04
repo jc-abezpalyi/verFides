@@ -37,29 +37,30 @@
     }
   }
   &__info-holder {
-
     text-align: center;
   }
   &__btn {
-    display: inline-block;
     font-size: 14px;
     font-weight: bold;
     width: 170px;
-    height: 50px;
-    margin: 31px auto 0;
     background-color: transparent;
     border: 1px solid var(--color-white);
-    padding: 15px 0;
     color: var(--color-white);
-    text-decoration: none;
     transition: opacity 0.3s;
+
+
+    display: inline-block;
+    height: 50px;
+    margin: 31px auto 0;
+    padding: 15px 0;
+    text-decoration: none;
     @include media('<tablet') {
       width: 142px;
       font-size: 12px;
+
       margin: 17px 0 0;
       padding: 17px 0;
     }
-
     &:hover {
       opacity: 0.5;
     }
