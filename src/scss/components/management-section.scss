@@ -1,5 +1,5 @@
 .management-section {
-  margin-bottom: 78px;
+  margin-bottom: 42px;
   @include media('<tablet'){
     margin-bottom: 41px;
   }
@@ -89,42 +89,5 @@
         display: none;
       }
     }
-  }
-
-  &__btn-holder {
-    border: 1px solid var(--color-darck-blue);
-    max-width: 170px;
-    text-align: center;
-    margin: 0 auto 20px;
-    @include media('<tablet') {
-      max-width: 141px;
-      height: 42px;
-    }
-
-     a {
-      font-weight: bold;
-      font-size: 14px;
-      transition: opacity 0.3s;
-
-
-      display: inline-block;
-      padding: 16px;
-      text-decoration: none;
-      color: var(--color-darck-blue);
-      margin-right: 5px;
-       @include media('<tablet'){
-         font-size: 12px;
-         font-weight: bold;
-         padding: 11px;
-       }
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-  }
-  .management-btn-arrow{
-    transform: rotate(-90deg);
-    width: 17px;
-    padding: 0 4px 0 0;
   }
 }

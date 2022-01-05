@@ -97,46 +97,6 @@
     }
   }
 
-  &__btn-holder {
-    border: 1px solid var(--color-darck-blue);
-    position: relative;
-    width: 170px;
-    height: 50px;
-    margin: 0 auto 53px;
-    @include media('<tablet') {
-      width: 141px;
-      height: 42px;
-      margin-bottom: 41px;
-    }
-
-    a {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      text-align: center;
-      font-size: 14px;
-      font-weight: bold;
-      color: var(--color-darck-blue);
-      text-decoration: none;
-      transition: opacity 0.3s;
-      @include media('<tablet') {
-        font-size: 12px;
-      }
-
-      &:hover {
-        opacity: 0.5;
-      }
-    }
-
-    .resources__btn-holder-arrow {
-      width: 20px;
-      padding: 0 5px 0 0;
-      transform: rotate(-90deg);
-      margin-left: 3px;
-    }
-  }
-
   &__card {
     padding-bottom: 20px;
     @include media('<tablet') {
