@@ -106,7 +106,8 @@
     position: relative;
     background-color: rgba(255, 255, 255, 0.1);
     border: none;
-    color: white;
+    display: block;
+    color: var(--color-white);
     width: 353px;
     min-height: 150px;
     font-weight: bold;
