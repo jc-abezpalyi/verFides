@@ -12,7 +12,6 @@
       font-weight: bold;
       font-size: 14px;
       transition: opacity 0.3s;
-
       display: inline-block;
       padding: 16px;
       text-decoration: none;
@@ -34,7 +33,7 @@
     }
 
 }
-.btn{
+.btn {
   font-size: 14px;
   font-weight: bold;
   min-width: 170px;
@@ -42,8 +41,6 @@
   background-color: transparent;
   color: var(--color-white);
   transition: opacity 0.3s;
-
-
   margin: 40px 0 0;
   align-items: center;
   text-align: center;
@@ -51,7 +48,6 @@
   @include media('<tablet') {
     min-width: 142px;
     font-size: 12px;
-    
     margin: 20px 0 0;
   }
   &:hover {
