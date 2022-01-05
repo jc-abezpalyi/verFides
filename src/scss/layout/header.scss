@@ -21,20 +21,19 @@
     padding: 30px;
     @include media('<desktop') {
       display: none;
-    }
-  }
-  @include media('<desktop') {
-    &__list-burger {
-      position: absolute;
-      overflow: scroll;
-      width: 100%;
-      height: 100vh;
-      margin-top: 57px;
-      background-color: var(--color-main-grey);
-      display: block;
-      z-index: 1;
-      & li {
-        padding: 10px;
+
+      body.nav-open & {
+        position: absolute;
+        overflow: scroll;
+        width: 100%;
+        height: 100vh;
+        margin-top: 57px;
+        background-color: var(--color-main-grey);
+        display: block;
+        z-index: 1;
+        & li {
+          padding: 10px;
+        }
       }
     }
   }
@@ -105,32 +104,32 @@
   .line1 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
+    
+    body.nav-open & {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
   }
   
   .line2 {
     stroke-dasharray: 60 60;
     stroke-width: 6;
+    body.nav-open & {
+      stroke-dasharray: 1 60;
+      stroke-dashoffset: -30;
+      stroke-width: 6;
+    }
   }
 
   .line3 {
     stroke-dasharray: 60 207;
     stroke-width: 6;
-  }
 
-  .opened .line1 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
-  }
-
-  .opened .line2 {
-    stroke-dasharray: 1 60;
-    stroke-dashoffset: -30;
-    stroke-width: 6;
-  }
-  .opened .line3 {
-    stroke-dasharray: 90 207;
-    stroke-dashoffset: -134;
-    stroke-width: 6;
+    body.nav-open & {
+      stroke-dasharray: 90 207;
+      stroke-dashoffset: -134;
+      stroke-width: 6;
+    }
   }
 }
