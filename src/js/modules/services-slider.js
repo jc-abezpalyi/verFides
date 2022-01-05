@@ -21,6 +21,7 @@ const servicesSlider = () => {
         },
       });
     };
+    
     if ($win.width() > 768) {
       sliderInit();
     }
@@ -30,6 +31,7 @@ const servicesSlider = () => {
       } else if ($win.width() > 768 && slider.destroyed) {
         sliderInit();
       }
+
     });
   };
   return {
