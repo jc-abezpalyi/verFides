@@ -3,7 +3,6 @@ import $ from 'jquery';
 
 Swiper.use([Navigation, Pagination]);
 
-
 const servicesSlider = () => {
   const init = () => {
     const $win = $(window);
@@ -31,7 +30,7 @@ const servicesSlider = () => {
       slider.destroy();
       destroy = true;
     };
-    
+
     if ($win.width() > 768) {
       sliderInit();
     }
@@ -41,7 +40,6 @@ const servicesSlider = () => {
       } else if ($win.width() > 768 && destroy) {
         sliderInit();
       }
-
     });
   };
   return {
