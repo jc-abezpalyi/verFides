@@ -1,6 +1,7 @@
 .welcome-section {
   margin-bottom: 88px;
   border-bottom: 1px solid #a5a5a5;
+  max-width: 100%;
   @include media('<tablet') {
     margin-bottom: 25px;
   }

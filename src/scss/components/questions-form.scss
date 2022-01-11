@@ -16,9 +16,6 @@
 
   &__container {
     max-width: 1000px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     padding: 0 15px;
     margin: 0 auto;
     @include media('<tablet') {
@@ -28,6 +25,7 @@
 
   &__text {
     font-size: 18px;
+    display: block;
     text-align: center;
     color: var(--color-white);
 
@@ -42,6 +40,7 @@
     max-width: 735px;
     display: flex;
     flex-wrap: wrap;
+    margin: 0 auto;
     @include media('<tablet') {
       max-width: 535px;
       flex-direction: column;
@@ -118,5 +117,8 @@
       width: 100%;
       font-size: 12px;
     }
+  }
+  &__btn {
+    display: block;
   }
 }

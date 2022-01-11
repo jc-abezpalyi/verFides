@@ -135,16 +135,19 @@
   }
 
   &__card-download {
-    &-arrow {
-      width: 15px;
-    }
-
     &-link {
       text-decoration: none;
       font-size: 14px;
       font-weight: bold;
       color: var(--color-darck-blue);
-      transition: opacity 0.3s;
+      transition: opacity 0.3s; 
+
+      &:after{
+        content: url('../../images/arrow-down-download-icon.svg');
+        display: inline-block;
+        width: 15px;
+        font-size: 10px;
+      }
 
       &:hover {
         opacity: 0.5;

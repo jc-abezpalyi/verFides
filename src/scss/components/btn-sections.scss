@@ -41,14 +41,13 @@
   background-color: transparent;
   color: var(--color-white);
   transition: opacity 0.3s;
-  margin: 40px 0 0;
-  align-items: center;
+  margin: 40px auto 0 auto;
   text-align: center;
   padding: 14px 15px;
   @include media('<tablet') {
     min-width: 142px;
     font-size: 12px;
-    margin: 20px 0 0;
+    margin: 20px auto 0 auto;
   }
   &:hover {
     opacity: 0.5;
