@@ -7,7 +7,7 @@ const burger = () => {
   if (!$btn.length) {
     return;
   }
-  
+
   const OPENED_MENU_CLASSNAME = 'nav-open';
 
   const burgerHandler = () => {

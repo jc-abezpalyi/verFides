@@ -1,4 +1,4 @@
-.form-questions-section {
+.questions-section {
   background-color: var(--color-darck-blue);
   padding: 70px 0 105px;
   @include media('<tablet') {
@@ -46,7 +46,7 @@
       flex-direction: column;
     }
 
-    .form-questions-section__input {
+    .questions-section__input {
       @include placeholder {
         color: rgba(255, 255, 255, 0.7);
       }
