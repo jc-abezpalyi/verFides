@@ -80,10 +80,11 @@
     }
     a {
       text-decoration: none;
+      &:nth-child(2) {
+        margin-left: 10px;
+      }
     }
-    a:nth-child(2) {
-      margin-left: 10px;
-    }
+    
 
     @include media('<tablet') {
       span {

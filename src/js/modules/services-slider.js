@@ -13,7 +13,6 @@ const servicesSlider = () => {
       slider = new Swiper('.services-section__slider', {
         slidesPerView: 4,
         direction: 'horizontal',
-        init: false,
         speed: 300,
         loop: false,
         autoHeight: true,
@@ -22,7 +21,6 @@ const servicesSlider = () => {
           prevEl: '.services-section__btn-prev',
         },
       });
-      slider.init();
       destroy = false;
     };
 

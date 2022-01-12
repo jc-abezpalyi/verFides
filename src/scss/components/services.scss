@@ -22,8 +22,7 @@ $slider-colors: (
     max-width: 870px;
     margin: 65px 0 83px;
     @include media('<tablet') {
-      margin-bottom: 35px;
-      margin-top: 0;
+      margin: 0 0 35px 0;
     }
   }
 
@@ -64,7 +63,8 @@ $slider-colors: (
 
   &__slider__slide-wrapper {
     @include media('<tablet') {
-      display: contents;
+      display: flex;
+      align-items: center;
       text-align: left;
     }
   }
@@ -130,12 +130,10 @@ $slider-colors: (
 
     img {
       width: 100%;
-      min-height: 300px;
-      max-height: 300px;
+      height: 300px;
       object-fit: cover;
       @include media('<tablet') {
-        min-height: 150px;
-        max-height: 150px;
+        height: 150px;
       }
     }
   }
